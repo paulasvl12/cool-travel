@@ -1,0 +1,385 @@
+html {
+
+  font-family: Gill Sans, sans-serif;
+
+
+}
+
+body{
+text-align: center;
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  background-color:rgb(174, 243, 231);
+  box-shadow: 0px 5px;
+}
+
+body > * {
+  text-align: center;
+  width: 100%;
+
+  right: 0;
+}
+
+/* Styles for Nav bar */
+
+.logo{
+float: left;
+}
+
+.fa-paper-plane{
+  color: rgb(195, 60, 84);
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 36px;
+}
+.logo{
+ -webkit-transition: -webkit-transform 1s ease;
+          transition:         transform 1s ease;
+
+}
+
+.logo:hover{
+ -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);}
+
+
+
+
+
+nav {
+  padding: 0px;
+  overflow: hidden;
+  width: 100%;
+}
+
+header{
+  margin: 0px;
+  padding: 0px;
+}
+
+nav ul {
+  margin: 0px;
+  list-style-type: none;
+  overflow: hidden;
+
+  text-align: center;
+  width: 100%;
+}
+
+
+nav li{
+  display: inline-block;
+  padding: 20px;
+  padding-right: 45px;
+  font-family: 'Dancing Script','Satisfy','Cormorant Garamond', serif;
+  font-size: 19px;
+}
+
+
+
+ nav li a {
+  color: rgb(195, 60, 84);
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+}
+
+nav li a:hover{
+  color: white;
+  text-shadow: 3px 2px 3px black;
+}
+
+
+#active{
+  color: rgb(128,149,255);
+}
+
+#active:hover{
+  color: black;
+}
+/* body */
+
+article{
+  display: block;
+  float: left;
+  height: 100%;
+  width: 100%;
+
+}
+article > * {
+  text-align: center;
+  width: 100%;
+}
+
+.article-info{
+  padding-top: 30px;
+  text-align: center;
+}
+
+.article-heading{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 43px;
+  font-family: 'Dancing Script','Satisfy','Cormorant Garamond', serif;
+}
+
+
+
+p.words-font{
+  display: inline-block;
+  position: relative;
+  width: 30%;
+
+  font-size: 18px;
+  font-family:  'Raleway','Cormorant Garamond', serif;
+  text-align: center;
+  color: black;
+
+
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+.container-fluid {
+  padding: 0px;
+}
+.cell {
+  width:25%;
+  padding: 5px;
+}
+
+aside {
+  display: block ;
+  float: right;
+  width: 33.33%;
+  border-left-style: double;
+}
+
+
+section > div.slide-container {
+  overflow: auto;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.slide-container img:hover {
+  height: 20%;
+  width: 20%;
+}
+
+.slide-container i {
+width: 5%;
+height: 5%;
+}
+
+.facts{
+ font-size: 18px;
+  padding-top: 10%;
+  text-align: center;
+}
+
+aside > div > ol > li{
+  padding: 9.5px;
+  font-size: 17px;
+  font-family:  'Raleway','Cormorant Garamond', serif;
+}
+
+/*
+aside  img div{
+  width: 50%;
+  margin: auto;
+}
+/*footer */
+
+div#trip-info {
+  padding: 0 50%;
+  display: inline;
+  text-align: center;
+
+}
+
+div#trip-info form div {
+  background-color: white;
+  border: 2px solid rgb(195, 60, 84);
+
+  width: 80%;
+  margin: 5% 10%;
+  text-align: center;
+}
+  div#trip-info input {
+    margin: 5% 0px;
+  }
+
+input#search {
+  background-color: black;
+  color: white;
+  padding: 1% 2%;
+}
+
+
+
+
+
+section#bundle div {
+  display : flex;
+  flex-direction: row;
+}
+h4 {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 80%;
+}
+
+#bundle {
+  background-color: white;
+}
+
+#bundle ul {
+    margin: 1% 5%;
+    list-style-type: none;
+
+    width: 100%;
+    left: 0;
+
+}
+
+h2#include {
+   font-family: 'Oleo Script', cursive;
+ color: rgb(195, 60, 84);
+  text-align: center;
+  font-size: 1.8em;
+}
+#bundle ul li {
+    width: 30%;
+    float: left;
+    color: rgb(55, 113, 142);
+    text-align: center;
+
+}
+
+ul::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+h2.titles {
+  font-family: 'Oleo Script', cursive;
+  color: rgb(195, 60, 84);
+  text-align: center;
+  font-size: 1.8em;
+}
+li p {
+  width: 50%;
+  margin: 0 auto;
+}
+h2.titles#who{
+  margin: 0 auto;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 10%;
+  width: 100%;
+  background-color:rgb(174, 243, 231);
+  color: white;
+  text-align: center;
+padding: 5% 0%;
+
+}
+
+footer > div{
+  display: block;
+  overflow: hidden;
+  width: 33.33%;
+  padding: 1% 5%;
+  font-family:  'Raleway','Cormorant Garamond', serif;
+}
+footer h3 {
+  color: rgb(195, 60, 84);
+}
+
+footer > div > p {
+color: rgb(195, 60, 84);
+  font-size: 0.8em;
+}
+
+footer > div > p > a{
+  color: rgb(195, 60, 84);
+  text-decoration: none;
+}
+
+footer::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+footer::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+
+/* Animations */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% {
+    transform: translate3d(85px,0,0);
+  }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}

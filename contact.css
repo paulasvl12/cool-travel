@@ -1,0 +1,252 @@
+html {
+
+  font-family: Gill Sans, sans-serif;
+  background: linear-gradient(144deg, rgba(2,0,36,1) 0%, rgba(71,9,121,1) 60%, rgba(189,0,99,1) 100%);
+
+}
+
+body{
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+
+background: linear-gradient(144deg, rgba(2,0,36,1) 0%, rgba(71,9,121,1) 60%, rgba(189,0,99,1) 100%);
+  box-shadow: 0px 5px;
+}
+
+/* Styles for Nav bar */
+
+.logo{
+float: left;
+}
+
+.fa-paper-plane{
+  color: white;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 36px;
+}
+.logo{
+ -webkit-transition: -webkit-transform 1s ease;
+          transition:         transform 1s ease;
+
+}
+
+.logo:hover{
+ -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);}
+
+
+
+
+
+nav {
+  padding: 0px;
+  overflow: hidden;
+  width: 100%;
+}
+
+header{
+  margin: 0px;
+  padding: 0px;
+}
+
+nav ul {
+  margin: 0px;
+  list-style-type: none;
+  overflow: hidden;
+
+  text-align: center;
+  width: 100%;
+}
+
+
+nav li{
+  display: inline-block;
+  padding: 20px;
+  padding-right: 45px;
+font-family: 'Dancing Script','Satisfy','Cormorant Garamond', serif;
+  font-size: 19px;
+
+}
+
+
+
+ nav li a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+}
+
+nav li a:hover{
+  color: white;
+  text-shadow: 3px 2px 3px black;
+}
+
+
+#active{
+  color: rgb(128,149,255);
+}
+
+#active:hover{
+  color: black;
+}
+
+
+
+h1{
+  font-size:5em;
+  font-family: 'EB Garamond', serif;
+  padding-left: 20px;
+  color: white;
+}
+.txt{
+  margin-left: 10px;
+  color: white;
+
+}
+
+#contact-info{
+  font-size: 2em;
+   font-family:  'Raleway','Cormorant Garamond', serif;;
+  padding-left: 2%;
+  width: 40%;
+  color : white;
+}
+
+
+
+ul{
+  font-size: 18px;
+  padding-left: 3%;
+
+  color: white;
+}
+#text{
+  font-size: 20px;
+  font-family:'Tinos', serif;
+  padding-left: 12px;
+font-family:  'Raleway','Cormorant Garamond', serif;
+}
+
+p{
+  font-size: 30px;
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+  color: white;
+
+}
+#contact-info-form {
+
+  margin: 30px 25%;
+  border: 1px solid black;
+  width: 50%;
+
+}
+
+
+
+
+ #contact{
+  width:300px;
+  height: 48px;
+  border: 1px solid #d9d7d7;
+  outline: none;
+  margin-left: 26%;
+  padding-left: 15px;
+  font-family: 'Tinos', serif;
+  font-size: 15px;
+ }
+ textarea{
+  margin-left: 26%;
+  height: 50px;
+  width: 250px;
+  border: 1px solid #d9d7d7;
+  padding-left: 15px;
+  font-family: 'Tinos', serif;
+  font-size: 15px;
+ }
+
+ #submit{
+  background-color: white;
+  color: black;
+  border: 2px solid #d9d7d7 ;
+  font-family: 'Tinos', serif;
+  width: 20%;
+  height: 40px;
+  margin-left: 40%;
+  margin-top: 5%;
+
+}
+
+ #submit:hover {
+  background-color:black;
+  color: white;
+}
+
+img{
+  width: 650px;
+  height: 400px;
+  margin-inline-start: 3%;
+}
+
+
+
+footer{
+   font-family: 'EB Garamond', serif;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+
+footer > div > p > a{
+  color: white;
+}
+
+footer::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+
+
+
+/* Icons */
+h3#our-socials {
+  font-size: 1.3em;
+   font-family:  'Raleway','Cormorant Garamond', serif;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 8px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  color: white;
+}

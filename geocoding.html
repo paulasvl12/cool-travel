@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geocoding using Google Maps Javascript API</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <style>
+            html, body{
+                height:100%;
+            }
+            #map{
+                height:90%;
+            }
+            input, button {
+              margin: 1% 0;
+              font-size: 1.2em;
+
+            }
+            button {
+            	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+            	background-color:rgb(195, 60, 84);
+              color: white;
+            	cursor:pointer;
+            	text-decoration:none;
+            	text-shadow:0px 1px 0px #1570cd;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="map"></div>
+        <input type="text" placeholder="Enter City" id="address" >
+        <button onclick="geocodeAddress();">Find City </button>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIUJHbe_n4j5sR6Sc0pOjrVTQL0fHb-7I"> </script>
+        <script>
+
+            //set map options
+            var myLatLng = {lat: 51.5, lng: -0.1};
+            var mapOptions = {
+                center: myLatLng,
+                zoom: 7,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+
+            };
+
+
+
+
+
+            //create map
+            var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+            // create marker 1
+            var marker1Options = {
+            position: myLatLng,
+            map: map,
+            draggable: true,
+            animation: google.maps.Animation.DROP // animation
+            }
+            var marker1 = new google.maps.Marker(marker1Options);
+
+            var contentString = " You're Here ";
+            var infowindow = new google.maps.InfoWindow({
+              content: contentString,
+              maxWidth: 100
+            });
+
+            //listener to marker to show InfoWindow
+            marker1.addListener("mouseover", function() {
+            infowindow.open(map, marker1)
+            });
+            //create a geocoder object to use the geocode method
+            var geocoder = new google.maps.Geocoder();
+
+
+            //create geocode function
+            function geocodeAddress(){
+                geocoder.geocode({'address': document.getElementById("address").value}, function(results, status){
+                    if(status == google.maps.GeocoderStatus.OK){
+                        console.log(results);
+                        map.setCenter(results[0].geometry.location);
+                        var marker = new google.maps.Marker({
+                            map: map,
+                            position: results[0].geometry.location
+                        });
+                    }else{
+                        window.alert("Geocode not successful: " + status);
+                    }
+                });
+            }
+
+
+     // autocomplete
+      var input = document.getElementById("address");
+        var options = {
+        types : ["(cities)"]
+            }
+          var autocomplete = new google.maps.places.Autcomplete(input, options);
+              autocomplete.addListener("place_changed", onPlaceChanged);
+            function onPlaceChanged(){
+              var place = autocomplete.getPlace();
+            map.panTo(place.geometry.location);
+                        }
+
+
+
+
+
+        </script>
+    </body>
+
+</html>
